@@ -3,11 +3,11 @@ This implementation is based on the following paper - [Parallelization of Error 
 
 Error Weighted Hashing (EWH) is a fast algorithm for Approximate k-Nearest neighbour search in Hamming space. It is more efficient than traditional Locality Sensitive Hashing algorithm (LSH) since it generates shorter list of strings for finding the exact distance from the query.
 
-We have parallelized the EWH algorithm using Cuda and OpenMP. Speedup of 44 times on a 16 core GPU and 16 core CPU machine was achieved in case for hashing and 24 times for retrieval.
+We have parallelized the EWH algorithm using GPU (Cuda) and using GPU-CPU hybrid (Cuda+OpenMP). 
 
 ## List of implementations
-1. Cuda EWH
-2. Cuda+OpenMP EWH
+1. Sequential LSH
+2. Distributed LSH (using MPI)
 3. Sequential EWH
-4. MPI LSH
-5. Sequential LSH
+4. Parallel EWH using GPU (Cuda)
+5. Parallel EWH using GPU-CPU hybrid (Cuda+OpenMP)
