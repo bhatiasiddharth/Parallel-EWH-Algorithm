@@ -11,3 +11,17 @@ We have parallelized the EWH algorithm using GPU (Cuda) and using GPU-CPU hybrid
 3. Sequential EWH
 4. Parallel EWH using GPU (Cuda)
 5. Parallel EWH using GPU-CPU hybrid (Cuda+OpenMP)
+
+## Citation
+If you use this code for your research, please consider citing our paper.
+
+```
+@inproceedings{bhatia2016parallelization,
+  title={Parallelization of Error Weighted Hashing for Approximate k-Nearest neighbour search on GPU-CPU hybrid},
+  author={Bhatia, Siddharth and Badarla, Mohan Pavan Kumar},
+  booktitle={2016 IEEE 2nd International Conference on Big Data Security on Cloud (BigDataSecurity), IEEE International Conference on High Performance and Smart Computing (HPSC), and IEEE International Conference on Intelligent Data and Security (IDS)},
+  pages={203--207},
+  year={2016},
+  organization={IEEE}
+}
+```
